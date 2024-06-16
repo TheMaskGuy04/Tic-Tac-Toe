@@ -51,18 +51,26 @@ for (let i = 0; i < cell.length; i++) {
 
       let check = checkWinner();
       if (check != false) {
-        alert(`Winner is ${check}`);
+        // alert(`Winner is ${check}`);
 
-        stop();
+        // stop();
 
+        // return;
+
+        setTimeout(() => {
+          alert(`Winner is ${check}`);
+
+          stop();
+        }, 100);
         return;
       }
 
       if (checkForDraw() == true) {
-        alert(`Its a draw`);
+        setTimeout(() => {
+          alert(`Its a draw`);
 
-        stop();
-
+          stop();
+        }, 100);
         return;
       }
 
@@ -75,18 +83,32 @@ for (let i = 0; i < cell.length; i++) {
 
         check = checkWinner();
         if (check != false) {
-          alert(`Winner is ${check}`);
+          // alert(`Winner is ${check}`);
 
-          stop();
+          // stop();
 
+          // return;
+
+          setTimeout(() => {
+            alert(`Winner is ${check}`);
+
+            stop();
+          }, 100);
           return;
         }
 
         if (checkForDraw() == true) {
-          alert(`Its a draw`);
+          // alert(`Its a draw`);
 
-          stop();
+          // stop();
 
+          // return;
+
+          setTimeout(() => {
+            alert(`Its a draw`);
+
+            stop();
+          }, 100);
           return;
         }
       }
